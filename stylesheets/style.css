@@ -45,7 +45,7 @@ footer {
 }
 
 .header-wrapper h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: var(--letter-spacing);
     word-spacing: var(--word-spacing);
@@ -74,14 +74,16 @@ main {
 }
 
 section {
+    background-color: white;
     margin-bottom: calc(2*var(--white-space));
-    border: var(--bg-color) 2px solid;
+    border: var(--link-color) 0.5rem solid;
     border-radius: 1rem;
     padding: 1rem;
 }
 
 .section-heading {
     font-family: var(--primary-font);
+    color: var(--link-color)
     letter-spacing: var(--letter-spacing);
     word-spacing: : var(--word-spacing);
     font-size: 1.5rem;
@@ -130,15 +132,15 @@ ul li:last-child {
 }
 
 .texture-swatch-1 {
-    background: url(https://previews.123rf.com/images/wawritto/wawritto1406/wawritto140600015/29266400-zebra-pattern-as-a-background-vector-illustration.jpg) top left repeat;
+    background: url(../img/animal_pattern_5.png) top left repeat;
 }
 
 .texture-swatch-2 {
-    background: url(https://previews.123rf.com/images/chereliss/chereliss1709/chereliss170900041/85620190-leopard-seamless-pattern-leopard-spots-fashion-cheetah-print-popular-texture-vector-illustration.jpg) top left repeat;
+    background: url(../img/animal_pattern_6.png) top left repeat;
 }
 
 .texture-swatch-3 {
-    background: url(https://static.vecteezy.com/system/resources/previews/000/127/698/non_2x/vector-honey-badger-seamless-pattern.jpg) top left repeat;
+    background: url(../img/animal_pattern_1.png) top left repeat;
 }
 
 button {
@@ -181,6 +183,7 @@ button:active {
 
 .h1-sample {
     font-size: 2.4rem;
+    color: var(--link-color);
     letter-spacing: var(--letter-spacing);
     word-spacing: var(--word-spacing);
 }
@@ -203,7 +206,6 @@ strong {
 em {
     font-style: italic;
 }
-
 
 /*link styling and hover*/
 a {
@@ -258,14 +260,15 @@ p[class*="font-details-"] {
 .adjectives li:nth-of-type(2) {
     font-family: var(--secondary-font);
     font-size: 2rem;
+    font-style: italic;
     color: var(--link-color);
 }
 
 .adjectives li:nth-of-type(3) {
     font-family: var(--primary-font);
     font-size: 2rem;
-    font-style: italic;
-    color: var(--color-4);
+
+    color: var(--link-hover-color);
 }
 
 .adjectives li:nth-of-type(4) {
