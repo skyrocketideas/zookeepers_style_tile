@@ -1,101 +1,91 @@
-/* change these */
-
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,800italic,400,800);
-@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic);
+/*import google font */
+@import url('https://fonts.googleapis.com/css?family=Rubik|Rubik+Mono+One|Trade+Winds&display=swap');
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-/* THIS IS ALL meant for editing. You might want to do it differently, name the variables differently, use the fonts in other ways in the font hierarchy etc. */
-
-/*:root {
-  --bg-color: #9f1c19;
-  --link-color: #65d1fb;
-  --link-hover-color: #ff8500;
-  --color-4: #05abeb;
-  --color-5: #ff241f;
-
-  --primary-font: "Open Sans", sans-serif;
-  --secondary-font: "Droid Serif", serif;
-  --main-text-color: #222222;
-
-  --white-space: 1rem;
-}
-*/
-
+/*setup variables */
 :root {
-  --bg-color: #000;
-  --link-color: #000;
-  --link-hover-color: #000;
-  --color-4: #000;
-  --color-5: #000;
+    --bg-color: #0A1747;
+    --link-color: #126e5b;
+    --link-hover-color: #00ADF5;
+    --color-4: #FFFF05;
+    --color-5: #E000F5;
 
-  --primary-font: sans-serif;
-  --secondary-font: serif;
-  --main-text-color: #000;
+    --primary-font: 'Rubik Mono One', sans-serif;
+    --secondary-font: 'Rubik', sans-serif;
+    --tertiary-font: 'Trade Winds', cursive;
+    --main-text-color: #000;
 
-  --white-space: 1rem;
+    --letter-spacing: -0.1rem;
+    --word-spacing: -1rem;
+    --white-space: 1rem;
 }
 
 html {
-  font-size: 100%;
-  font-family: var(--primary-font);
+    font-size: 100%;
+    font-family: var(--primary-font);
 }
 
+/*header setup */
 header,
 main,
 footer {
-  max-width: 1300px;
-  margin: 0 auto;
-  padding: calc(2*var(--white-space));
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: calc(2*var(--white-space));
 }
 
 .full-width {
-  background: var(--bg-color);
-  color: white;
-  width: 100%
+    background: var(--bg-color);
+    color: white;
+    width: 100%;
+    border-bottom: 10px solid var(--link-color);
 }
 
 .header-wrapper h1 {
-  font-size: 3rem;
-  text-transform: uppercase;
-  letter-spacing: -2px;
-  padding-right: .75em;
-  font-weight: bold;
-  color: white;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: var(--letter-spacing);
+    word-spacing: var(--word-spacing);
 }
 
 .header-wrapper h2 {
-  font-size: 1.6em;
-  color: rgba(255, 255, 255, 0.95);
-  font-weight: bold;
-  margin: var(--white-space) 0;
+    font-family: var(--tertiary-font);
+    font-size: 3rem;
+    color: var(--color-4);
 }
 
 .header-wrapper h3 {
-  font-size: 1.2rem;
-  font-style: italic;
+    font-family: var(--secondary-font);
+    text-transform: capitalize;
+    margin: var(--white-space) 0;
 }
 
 .header-wrapper h4 {
-  font-size: 0.8rem;
+    font-family: var(--secondary-font);
+    text-transform: capitalize;
+    margin: var(--white-space) 0;
 }
 
 main {
-  padding: calc(2*var(--white-space));
+    padding: calc(2*var(--white-space));
 }
 
 section {
-  margin-bottom: calc(2*var(--white-space));
+    margin-bottom: calc(2*var(--white-space));
+    border: var(--bg-color) 2px solid;
+    border-radius: 1rem;
+    padding: 1rem;
 }
 
 .section-heading {
-  font-family: var(--primary-font);
-  font-style: italic;
-  font-size: 1.3rem;
-  color: #777;
-  margin: .5rem 0;
+    font-family: var(--primary-font);
+    letter-spacing: var(--letter-spacing);
+    word-spacing: : var(--word-spacing);
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
 }
 
 ul {
@@ -104,175 +94,210 @@ ul {
 }
 
 .swatches li {
-  margin-right: 5vw;
-  height: 15vw;
-  width: 20%;
+    margin-right: 5vw;
+    height: 15vw;
+    width: 20%;
 }
 
 ul li:last-child {
-  margin-right: 0;
+    margin-right: 0;
 }
 
 .color-swatch-1 {
-  background-color: var(--bg-color);
+    background-color: var(--bg-color);
 }
 
 .color-swatch-2 {
-  background-color: var(--link-color);
+    background-color: var(--link-color);
 }
 
 .color-swatch-3 {
-  background-color: var(--link-hover-color);
+    background-color: var(--link-hover-color);
 }
 
 .color-swatch-4 {
-  background-color: var(--color-4);
+    background-color: var(--color-4);
 }
 
 .color-swatch-5 {
-  background-color: var(--color-5);
+    background-color: var(--color-5);
 }
 
 .textures li {
-  height: 30vw;
-  width: 40%;
-  margin-right: 5vw;
+    height: 30vw;
+    width: 40%;
+    margin-right: 5vw;
 }
 
 .texture-swatch-1 {
-  background: url(../img/pw_maze_white.png) top left repeat;
+    background: url(https://previews.123rf.com/images/wawritto/wawritto1406/wawritto140600015/29266400-zebra-pattern-as-a-background-vector-illustration.jpg) top left repeat;
 }
 
 .texture-swatch-2 {
-  background: url(../img/subtle_grunge.png) top left repeat;
-}
-
-.texture-swatch-1 {
-  background: url(../img/pw_maze_white.png) top left repeat;
+    background: url(https://previews.123rf.com/images/chereliss/chereliss1709/chereliss170900041/85620190-leopard-seamless-pattern-leopard-spots-fashion-cheetah-print-popular-texture-vector-illustration.jpg) top left repeat;
 }
 
 .texture-swatch-3 {
-  background: url(../img/white_paperboard.png) top left repeat;
+    background: url(https://static.vecteezy.com/system/resources/previews/000/127/698/non_2x/vector-honey-badger-seamless-pattern.jpg) top left repeat;
 }
 
 button {
-  padding: 1rem;
-  border-radius: 4px;
-  background: var(--link-color);
-  text-align: center;
-  text-decoration: none;
-  font: bold 1.25em/1 "Open Sans", sans-serif;
-  letter-spacing: 1px;
-  color: white;
-  text-transform: uppercase;
-  text-shadow: 0px -1px 0px #0374a0;
-  transition: all 0.2s ease;
-  cursor: pointer;
-  margin: 0 1rem 1rem 0;
+    padding: 1rem;
+    background: var(--link-color);
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    border-radius: 1rem;
+    margin: 0 1rem 1rem 0;
 }
 
 .secondary-button {
-  background: var(--color-5);
+    background: var(--color-5);
 }
 
 button:focus,
 button:active,
 button:focus-within {
-  outline: 0;
-  border-radius: 4px;
+    outline: 0;
+    border-radius: 4px;
 }
 
 button:hover {
-  background-color: var(--link-hover-color);
-  /*opacity: 0.5;*/
+    background-color: var(--link-hover-color);
+    opacity: 0.5;
 }
 
 button:active {
-  background-color: var(--bg-color);
+    background-color: var(--bg-color);
 }
 
 .typography-main {
-  color: var(--main-text-color);
+    color: var(--main-text-color);
 }
 
 .h1-sample {
-  font-size: 2.4rem;
-  font-weight: bold;
+    font-size: 2.4rem;
+    letter-spacing: var(--letter-spacing);
+    word-spacing: var(--word-spacing);
 }
 
 .h2-sample {
-  font-family: var(--secondary-font);
-  font-style: italic;
-  font-size: 1.25rem;
+    font-family: var(--secondary-font);
+    font-size: 1.25rem;
 }
 
 p.typography-sample {
-  font-family: var(--secondary-font);
-  line-height: 1.5;
-  max-width: 960px;
+    font-family: var(--secondary-font);
+    line-height: 1.5;
+    max-width: 960px;
 }
 
 strong {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 em {
-  font-style: italic;
+    font-style: italic;
 }
 
+
+/*link styling and hover*/
 a {
-  font-family: var(--primary-font);
-  color: var(--link-color);
-  font-weight: bold;
-  text-decoration: none;
-  transition: all 0.2s;
+    color: var(--link-color);
+
+    text-decoration: none;
+    padding: 0.5rem;
+    position: relative;
+}
+
+a::after {
+    border-top: .1rem solid var(--color-5);
+    content: "";
+    position: absolute;
+    right: 100%;
+    bottom: 0.5rem;
+    left: 0;
+    transition: right .9s cubic-bezier(0, .1, 0, 1);
 }
 
 a:hover {
-  color: var(--link-hover-color);
+    text-decoration: none;
+}
+
+a:hover::after {
+    right: 0;
 }
 
 p[class*="font-details-"] {
-  margin-top: .5rem;
-  margin-bottom: calc(2*var(--white-space));
-  font-size: 0.75rem;
-  font-family: var(--secondary-font);
-  color: #6f6f6f;
+    margin-top: .5rem;
+    margin-bottom: calc(2*var(--white-space));
+    font-size: 0.75rem;
+    font-family: var(--secondary-font);
+    color: #6f6f6f;
 }
 
+/*adjectives styling*/
 .adjectives ul {
-  font-size: 2rem;
-  opacity: 0.5;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }
 
-.adjectives ul {
-  flex-direction: column;
+.adjectives li {
+    padding: 0.8rem;
+}
+
+.adjectives li:nth-of-type(1) {
+    font-family: var(--tertiary-font);
+    font-size: 2rem;
+}
+
+.adjectives li:nth-of-type(2) {
+    font-family: var(--secondary-font);
+    font-size: 2rem;
+    color: var(--link-color);
+}
+
+.adjectives li:nth-of-type(3) {
+    font-family: var(--primary-font);
+    font-size: 2rem;
+    font-style: italic;
+    color: var(--color-4);
+}
+
+.adjectives li:nth-of-type(4) {
+    font-family: var(--tertiary-font);
+    font-size: 2rem;
+    color: var(--color-5);
 }
 
 footer {
-  font-style: italic;
+    font-style: italic;
 }
 
 @media (min-width:800px) {
-  main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 4rem;
-  }
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 4rem;
+    }
 
-  .swatches li {
-    margin-right: 3%;
-    height: 10vw;
-    width: 20%;
-  }
+    .swatches li {
+        margin-right: 3%;
+        height: 10vw;
+        width: 20%;
+    }
 
-  .textures li {
-    height: 15vw;
-  }
+    .textures li {
+        height: 15vw;
+    }
 }
 
 @media (min-width:900px) {
-  .adjectives ul {
-    flex-direction: row;
-  }
+    .adjectives ul {
+        flex-direction: row;
+    }
 }
